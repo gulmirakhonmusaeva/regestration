@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url('https://source.unsplash.com/1920x1280/?abstract');
+}
+
+.container {
+  width: 400px;
+  -webkit-box-shadow: 0px 15px 43px 10px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 15px 43px 10px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 15px 43px 10px rgba(0, 0, 0, 0.26);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px 0;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #f0f0f0;
+  font-weight: 800;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.form-control {
+  margin: 30px;
+}
+
+.form-control span {
+  visibility: hidden;
+}
+
+.form-control.error span {
+  visibility: visible;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  outline: none;
+  background-color: rgb(74, 53, 196);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-control.error input {
+  -webkit-box-shadow: 0px 0px 16px 8px rgba(255, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 16px 8px rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 0px 16px 8px rgba(255, 0, 0, 0.2);
+  border: 1.5px solid orangered;
+}
+
+.form-control.success input {
+  -webkit-box-shadow: 0px 0px 16px 8px rgba(0, 183, 255, 0.2);
+  -moz-box-shadow: 0px 0px 16px 8px rgba(0, 183, 255, 0.2);
+  box-shadow: 0px 0px 16px 8px rgba(0, 183, 255, 0.2);
+  border: 1.5px solid steelblue;
+}
